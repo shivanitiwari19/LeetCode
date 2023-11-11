@@ -6,11 +6,9 @@ class Solution {
         }
         for(boolean i : check){
             if(!i)
-                return false;
-        }
+                return false;}
         return true;
-    }
-    
+    }  
 }
 
 // class Solution {
