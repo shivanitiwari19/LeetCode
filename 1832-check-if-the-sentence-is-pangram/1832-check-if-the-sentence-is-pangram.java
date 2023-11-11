@@ -5,7 +5,7 @@ class Solution {
             check[sentence.charAt(i) - 'a'] = true;
         }
         for(boolean i : check){
-            if(!i)
+            if(i!=true)
                 return false;
         }
         return true;
