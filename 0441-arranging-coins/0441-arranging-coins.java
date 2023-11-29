@@ -1,8 +1,8 @@
 class Solution {
     public int arrangeCoins(int n) {
-        int res =0;
-        for(res=1;res<=n;res++)             
-            n=n-res;
-        return res-1;
+        int r = 0;
+        for(r=1 ; r<=n ; r++)             
+            n = n - r;
+        return r-1;
     }
 }
