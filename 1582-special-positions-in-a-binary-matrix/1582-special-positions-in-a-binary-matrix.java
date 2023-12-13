@@ -1,6 +1,6 @@
 class Solution {
     public int numSpecial(int[][] mat) {
-        int ans = 0;
+        int a = 0;
         int m = mat.length;
         int n = mat[0].length;
         
@@ -26,11 +26,11 @@ class Solution {
                 }
                 
                 if (good) {
-                    ans++;
+                    a++;
                 }
             }
         }
         
-        return ans;
+        return a;
     }
 }
