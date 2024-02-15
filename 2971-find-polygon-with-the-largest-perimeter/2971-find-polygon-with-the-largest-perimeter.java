@@ -6,11 +6,11 @@ class Solution {
         for(int i=1 ; i<prefixSum.length ; i++){
             prefixSum[i] = nums[i] + prefixSum[i-1];
         }
-        long result = Integer.MIN_VALUE;
+        long res = Integer.MIN_VALUE;
         for(int i =2; i<nums.length ; i++){
             if(nums[i] < prefixSum[i-1])
-                result = prefixSum[i];
+                res = prefixSum[i];
         }
-        return (result == Integer.MIN_VALUE) ? -1 : result;
+        return (res == Integer.MIN_VALUE) ? -1 : res;
     }
 }
