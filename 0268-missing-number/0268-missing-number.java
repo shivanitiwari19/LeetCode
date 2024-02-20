@@ -1,7 +1,7 @@
 class Solution {
     public int missingNumber(int[] arr) {
         int i=0;
-        while (i<arr.length){
+        while (i < arr.length){
             if(arr[i] < arr.length && arr[i] != arr[arr[i]]){
                 swap(arr, i, arr[i]);
             } else {
@@ -9,7 +9,7 @@ class Solution {
             }
         }
         
-        for(int index=0 ; index<arr.length ; index++){
+        for(int index=0 ; index < arr.length ; index++){
             if(arr[index] != index) {
                 return index;
             }
