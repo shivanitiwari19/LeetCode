@@ -9,6 +9,7 @@ class Solution {
             ans.append(count > 0 ? '1' : '0');
         }
         ans.deleteCharAt(ans.length() - 1);
-        return ans.append('1').toString();
+        ans.append('1');
+        return ans.toString();
     }
 }
