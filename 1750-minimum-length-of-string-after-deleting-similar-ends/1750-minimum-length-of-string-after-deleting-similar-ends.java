@@ -1,11 +1,11 @@
 class Solution {
     public int minimumLength(String s) {
-        int left = 0, right = s.length() - 1;
-        while (left < right && s.charAt(left) == s.charAt(right)) {
-            char ch = s.charAt(left);
-            while (left <= right && s.charAt(left) == ch) left++;
-            while (left <= right && s.charAt(right) == ch) right--;
+        int l = 0, r = s.length() - 1;
+        while (l < r && s.charAt(l) == s.charAt(r)) {
+            char ch = s.charAt(l);
+            while (l <= r && s.charAt(l) == ch) l++;
+            while (l <= r && s.charAt(r) == ch) r--;
         }
-        return right - left + 1;
+        return r - l + 1;
     }
 }
