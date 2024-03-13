@@ -1,8 +1,10 @@
 class Solution {
     public int pivotInteger(int n) {
+        int sum = n*(n+1)/2;
+        double a = Math.sqrt(sum);
         
-        if(Math.sqrt(n*(n+1)/2) - Math.ceil(Math.sqrt(n*(n+1)/2)) == 0)
-            return (int) Math.sqrt(n*(n+1)/2);
+        if(a - Math.ceil(a) == 0)
+            return (int) a;
         else 
             return -1;
     }
